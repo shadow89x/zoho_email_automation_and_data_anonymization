@@ -1,0 +1,201 @@
+# ===========================================
+# EMAIL AUTOMATION PROJECT - GITIGNORE
+# ===========================================
+
+# ===========================================
+# SENSITIVE DATA FILES (NEVER COMMIT)
+# ===========================================
+
+# Raw data files (contain personal information)
+/data/
+/chunk/
+*.csv
+*.CSV
+*.xlsx
+*.xls
+*.json
+*.pkl
+*.parquet
+*.feather
+*.tsv
+*.db
+*.sqlite
+*.h5
+*.npz
+*.npy
+
+# Credentials and API keys
+credentials.json
+*.env
+.env
+.env.*
+config/credentials.json
+config/api_keys.json
+config/secrets.json
+
+# Zoho API and email data
+zoho_emails.json
+zoho_*.json
+api_*.json
+
+# Personal information mappings
+*_mapping.csv
+*_anonymous_mapping.csv
+business_id_*.csv
+optical_name_*.csv
+from_address_*.csv
+
+# ===========================================
+# PROCESSED DATA (CONTAINS SENSITIVE INFO)
+# ===========================================
+
+# All processed data files
+processed_*.csv
+*_processed.csv
+*_anonymous.csv
+*_matched.csv
+*_complete.csv
+*_fixed.csv
+*_cleaned.csv
+*_updated.csv
+*_merged.csv
+
+# Email and customer data
+email_*.csv
+customer_*.csv
+inventory_*.csv
+sales_*.csv
+accounts_*.csv
+
+# ===========================================
+# DEVELOPMENT ENVIRONMENT
+# ===========================================
+
+# Python virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+
+# ===========================================
+# OS/EDITOR/IDE FILES
+# ===========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# ===========================================
+# MODEL AND CACHE FILES
+# ===========================================
+
+# Machine learning models
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.pb
+*.tflite
+*.joblib
+
+# Cache files
+*.cache
+.cache/
+
+# ===========================================
+# BACKUP AND TEMPORARY FILES
+# ===========================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+
+# Log files
+*.log
+logs/
+log/
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ===========================================
+# NOTEBOOK BACKUP FOLDER
+# ===========================================
+
+notebooks/backup/
+
+# ===========================================
+# DOCKER AND DEPLOYMENT
+# ===========================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# ===========================================
+# TESTING AND COVERAGE
+# ===========================================
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# ===========================================
+# DOCUMENTATION BUILD
+# ===========================================
+
+# Documentation
+docs/_build/
+site/
+
+# ===========================================
+# SECURITY NOTES
+# ===========================================
+
+# IMPORTANT: This project contains sensitive customer and business data
+# NEVER commit any files containing:
+# - Personal information (names, emails, phone numbers, addresses)
+# - Business identifiers
+# - API credentials
+# - Database connections
+# - Raw data files
+# - Mapping files that could reverse anonymization 
